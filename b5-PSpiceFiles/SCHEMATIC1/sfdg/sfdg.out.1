@@ -1,0 +1,125 @@
+
+**** 12/22/21 19:41:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sfdg"  [ C:\USERS\ADMIN\DESKTOP\B5\B5-PSpiceFiles\SCHEMATIC1\sfdg.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sfdg.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\ADMIN\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.99998 3.00002 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source B5
+V_V1         N01245 0 10Vdc
+L_L1         N01363 0  100mH IC=0.0000714285 
+X_S1         N01245 N01263 Sw_tClose PARAMS: tClose=3 ttran=1u Rclosed=0.01
++  Ropen=100000Meg
+R_R2         N01369 N01263  50k TC=0,0 
+V_V2         N01369 0 5Vdc
+R_R3         N01363 N01263  20k TC=0,0 
+R_R1         0 N01245  200k TC=0,0 
+
+**** RESUMING sfdg.cir ****
+.END
+
+**** 12/22/21 19:41:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sfdg"  [ C:\USERS\ADMIN\DESKTOP\B5\B5-PSpiceFiles\SCHEMATIC1\sfdg.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_S1.Smod       
+         RON     .01         
+        ROFF  100.000000E+09 
+         VON    1            
+        VOFF    0            
+
+
+ERROR(ORPSIM-15413): Transient Stop time 2.99998 s is less than Print Start time 3.00002 s.
+
+
+ABORTING SIMULATION
+**** 12/22/21 19:41:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sfdg"  [ C:\USERS\ADMIN\DESKTOP\B5\B5-PSpiceFiles\SCHEMATIC1\sfdg.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           5
+  External (NCNODS)                 =           6
+  Total (NUMNOD)                    =           6
+
+Total device count (NUMEL)          =           9
+  Inductors (L)                     =           1
+  Resistors (R)                     =           3
+  VSwitches (S)                     =           1
+  Voltage Sources (V)               =           3
+
+Number of subcircuits (X)           =           1
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          10
+  Initial no. elements (NTTAR)      =          22
+  No. elements w/ fillin (NTTBR)    =          22
+  No. fillins (IFILL)               =           0
+  No. overflows (NTTOV)             =           0
+  No. LU operations (IOPS)          =           0
+  Percent sparsity (PERSPA)         =      78.000
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =        0.00               1
+  Readin                            =         .03
+  General setup                     =        0.00
+  CMI setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .02
+  Total job time (using Solver 1)   =         .27
+

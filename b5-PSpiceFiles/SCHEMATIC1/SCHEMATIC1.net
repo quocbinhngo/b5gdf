@@ -1,0 +1,9 @@
+* source B5
+V_V1         N01245 0 10Vdc
+L_L1         N01363 0  100mH IC=0.0000714285714285 
+X_S1         N01245 N01263 Sw_tClose PARAMS: tClose=2.99999933 ttran=1u
++  Rclosed=0.01 Ropen=100000Meg
+R_R2         N01369 N01263  50k TC=0,0 
+V_V2         N01369 0 5Vdc
+R_R3         N01363 N01263  20k TC=0,0 
+R_R1         0 N01245  200k TC=0,0 

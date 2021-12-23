@@ -1,0 +1,51 @@
+(ExpressProject "b5"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\b5.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\b5-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector)
+  (MPSSessionName "ADMIN")
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\b5-pspicefiles\schematic1\sfdg.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\b5-pspicefiles\schematic1\sfdg.sim"
+        (DisplayName "SCHEMATIC1-sfdg")
+        (Type "PSpice Profile"))))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 1740 104 563")
+        (Scroll "1216 1024")
+        (Zoom "400")
+        (Occurrence "/"))
+      (Path "C:\USERS\ADMIN\DESKTOP\B5\B5.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))
